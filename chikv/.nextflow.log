@@ -1,0 +1,219 @@
+out-31 13:09:11.034 [main] DEBUG nextflow.cli.Launcher - $> nextflow run /home/alexandre/Downloads/viralflow_nf/ViralFlow//vfnext/main.nf --virus custom --outDir /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv --inDir /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv --runSnpEff true --writeMappedReads false --minLen 75 --depth 5 --minDpIntrahost 100 --trimLen 0 --refGenomeCode NC_004162.2 --nextflowSimCalls 1 --fastp_threads 1 --bwa_threads 1 --mafft_threads 1 -resume
+out-31 13:09:11.111 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 22.04.0
+out-31 13:09:11.137 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /home/alexandre/Downloads/viralflow_nf/ViralFlow/vfnext/nextflow.config
+out-31 13:09:11.140 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/alexandre/Downloads/viralflow_nf/ViralFlow/vfnext/nextflow.config
+out-31 13:09:11.181 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+out-31 13:09:12.275 [main] WARN  nextflow.config.ConfigBuilder - It appears you have never run this project before -- Option `-resume` is ignored
+out-31 13:09:12.333 [main] INFO  nextflow.cli.CmdRun - Launching `/home/alexandre/Downloads/viralflow_nf/ViralFlow/vfnext/main.nf` [cheesy_brahmagupta] DSL2 - revision: 567c575e53
+out-31 13:09:12.351 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/home/alexandre/.nextflow/plugins; core-plugins: nf-amazon@1.7.1,nf-azure@0.13.1,nf-console@1.0.3,nf-ga4gh@1.0.3,nf-google@1.1.4,nf-sqldb@0.4.0,nf-tower@1.4.0
+out-31 13:09:12.353 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+out-31 13:09:12.367 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+out-31 13:09:12.368 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+out-31 13:09:12.374 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+out-31 13:09:12.387 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+out-31 13:09:12.598 [main] DEBUG nextflow.Session - Session uuid: 7dd16f78-0ac6-4513-9da9-481f896f3405
+out-31 13:09:12.598 [main] DEBUG nextflow.Session - Run name: cheesy_brahmagupta
+out-31 13:09:12.599 [main] DEBUG nextflow.Session - Executor pool size: 4
+out-31 13:09:12.731 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 22.04.0 build 5697
+  Created: 23-04-2022 18:00 UTC (15:00 BRST)
+  System: Linux 5.4.0-131-generic
+  Runtime: Groovy 3.0.10 on OpenJDK 64-Bit Server VM 11.0.13+7-b1751.21
+  Encoding: UTF-8 (UTF-8)
+  Process: 25490@alexandre-Lenovo-ideapad-320-15IKB [127.0.1.1]
+  CPUs: 4 - Mem: 7.6 GB (288.7 MB) - Swap: 3.8 GB (2.6 GB)
+out-31 13:09:12.808 [main] DEBUG nextflow.Session - Work-dir: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/work [ext2/ext3]
+out-31 13:09:12.879 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+out-31 13:09:12.904 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+out-31 13:09:12.945 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+out-31 13:09:12.963 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+out-31 13:09:13.785 [main] DEBUG nextflow.Session - Session start invoked
+out-31 13:09:14.262 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+out-31 13:09:15.638 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `threads` -- Initialise it to a default value eg. `params.threads = some_value`
+out-31 13:09:15.641 [main] INFO  nextflow.Nextflow - 
+===========================================
+ VFNEXT_0.1 (dev : alpha)
+ Used parameters:
+-------------------------------------------
+ --inDir            : /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv
+ --outDir           : /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv
+ --virus            : custom
+ --refGenomeCode   *: NC_004162.2
+ --referenceGenome *: null
+ --referenceGFF    *: null
+ --adaptersFile     : null
+ --threads          : null
+ --minLen           : 75
+ --depth            : 5
+ --minDpIntrahost   : 100
+ --trimLen          : 0
+ --databaseDir      : /home/alexandre/Downloads/viralflow_nf/ViralFlow/vfnext/databases/
+ --runSnpEff        : true
+ --writeMappedReads : false
+ --nextflowSimCalls : 1
+ --fastp_threads    : 1
+ --bwa_threads      : 1
+ --mafft_threads    : 1
+
+
+* Only required for "custom" virus
+ Runtime data:
+-------------------------------------------
+ Running with profile:   [1;32mstandard[0m
+ Run container:          [1;32m[:][0m
+ Running as user:        [1;32malexandre[0m
+ Launch dir:             [1;32m/home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv[0m
+ Base dir:               [1;32m/home/alexandre/Downloads/viralflow_nf/ViralFlow/vfnext[0m
+ ------------------------------------------
+
+out-31 13:09:15.651 [main] WARN  nextflow.Nextflow - An adapter file path was not provided. The pipeline will run fastp without considering adapters.
+out-31 13:09:15.747 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:prepareDatabase` matches process processInputs:prepareDatabase
+out-31 13:09:15.769 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+out-31 13:09:15.769 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+out-31 13:09:15.775 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+out-31 13:09:15.782 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=1; memory=7.6 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+out-31 13:09:15.996 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:indexReferenceBWA` matches process indexReferenceBWA
+out-31 13:09:15.998 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+out-31 13:09:15.998 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+out-31 13:09:16.015 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:genFaIdx` matches process genFaIdx
+out-31 13:09:16.016 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+out-31 13:09:16.016 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+out-31 13:09:16.040 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:runFastp` matches process runFastp
+out-31 13:09:16.042 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+out-31 13:09:16.042 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+out-31 13:09:16.074 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:align2ref` matches process align2ref
+out-31 13:09:16.075 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+out-31 13:09:16.076 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+out-31 13:09:16.083 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:runIvar` matches process runIvar
+out-31 13:09:16.085 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+out-31 13:09:16.085 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+out-31 13:09:16.094 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:runReadCounts` matches process runReadCounts
+out-31 13:09:16.095 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+out-31 13:09:16.095 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+out-31 13:09:16.104 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:checkSnpEffDB` matches process checkSnpEffDB
+out-31 13:09:16.105 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+out-31 13:09:16.105 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+out-31 13:09:16.114 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:runSnpEff` matches process runSnpEff
+out-31 13:09:16.115 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+out-31 13:09:16.115 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+out-31 13:09:16.128 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:runVfReport` matches process runVfReport
+out-31 13:09:16.129 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+out-31 13:09:16.129 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+out-31 13:09:16.138 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:alignConsensus2Ref` matches process alignConsensus2Ref
+out-31 13:09:16.139 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+out-31 13:09:16.139 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+out-31 13:09:16.145 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:runPicard` matches process runPicard
+out-31 13:09:16.147 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+out-31 13:09:16.147 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+out-31 13:09:16.162 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:fixWGS` matches process fixWGS
+out-31 13:09:16.162 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+out-31 13:09:16.163 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+out-31 13:09:16.170 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:runIntraHostScript` matches process runIntraHostScript
+out-31 13:09:16.171 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+out-31 13:09:16.171 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+out-31 13:09:16.179 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:compileOutputs` matches process compileOutputs
+out-31 13:09:16.180 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+out-31 13:09:16.180 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+out-31 13:09:16.183 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: indexReferenceBWA, align2ref, fixWGS, bamToFastq, runPangolin, prepareDatabase, checkSnpEffDB, processInputs:prepareDatabase, runVfReport, runSnpEff, getUnmappedReads, compileOutputs_SC2, runFastp, runIvar, runReadCounts, genFaIdx, runIntraHostScript, runNextClade, compileOutputs, runPicard, alignConsensus2Ref, getMappedReads
+out-31 13:09:16.186 [main] DEBUG nextflow.Session - Ignite dataflow network (17)
+out-31 13:09:16.186 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > processInputs:prepareDatabase
+out-31 13:09:16.197 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/; pattern: *_R{1,2}*.fq.gz; options: [:]
+out-31 13:09:16.202 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > indexReferenceBWA
+out-31 13:09:16.204 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > genFaIdx
+out-31 13:09:16.204 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > runFastp
+out-31 13:09:16.203 [PathVisitor-2] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/; pattern: *_R{1,2}*.fastq.gz; options: [:]
+out-31 13:09:16.205 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > align2ref
+out-31 13:09:16.208 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > runIvar
+out-31 13:09:16.209 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > runReadCounts
+out-31 13:09:16.209 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > checkSnpEffDB
+out-31 13:09:16.209 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > runSnpEff
+out-31 13:09:16.209 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > runVfReport
+out-31 13:09:16.210 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > alignConsensus2Ref
+out-31 13:09:16.210 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > runPicard
+out-31 13:09:16.210 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > fixWGS
+out-31 13:09:16.210 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > runIntraHostScript
+out-31 13:09:16.211 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > compileOutputs
+out-31 13:09:16.211 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+out-31 13:09:16.211 [main] DEBUG nextflow.Session - Session await
+out-31 13:09:16.466 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+out-31 13:09:16.473 [Task submitter] INFO  nextflow.Session - [12/72aedc] Submitted process > runFastp (2)
+out-31 13:09:17.924 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: runFastp (2); status: COMPLETED; exit: 0; error: -; workDir: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/work/12/72aedcc80b8d69a72148a25ae42a22]
+out-31 13:09:17.930 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+out-31 13:09:17.939 [Task submitter] INFO  nextflow.Session - [06/ae53de] Submitted process > processInputs:prepareDatabase
+out-31 13:09:25.261 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: processInputs:prepareDatabase; status: COMPLETED; exit: 0; error: -; workDir: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/work/06/ae53de340a2776615162d57419ac0a]
+out-31 13:09:25.271 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=4; maxSize=4; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+out-31 13:09:25.285 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+out-31 13:09:25.311 [Task submitter] INFO  nextflow.Session - [51/70be78] Submitted process > runFastp (1)
+out-31 13:09:26.261 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: runFastp (1); status: COMPLETED; exit: 0; error: -; workDir: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/work/51/70be7899a30de6c63cf3c206b40459]
+out-31 13:09:26.310 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+out-31 13:09:26.319 [Task submitter] INFO  nextflow.Session - [c6/792a1b] Submitted process > checkSnpEffDB
+out-31 13:09:27.171 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: checkSnpEffDB; status: COMPLETED; exit: 0; error: -; workDir: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/work/c6/792a1b09853fa5d9da15889c48db12]
+out-31 13:09:27.175 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+out-31 13:09:27.175 [Task submitter] INFO  nextflow.Session - [8e/711b25] Submitted process > genFaIdx
+out-31 13:09:28.133 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: genFaIdx; status: COMPLETED; exit: 0; error: -; workDir: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/work/8e/711b2592f1382250ade0e888258858]
+out-31 13:09:28.140 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+out-31 13:09:28.152 [Task submitter] INFO  nextflow.Session - [e5/21724f] Submitted process > indexReferenceBWA
+out-31 13:09:28.849 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: indexReferenceBWA; status: COMPLETED; exit: 0; error: -; workDir: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/work/e5/21724f1f6ce36942fbfcaf760cda50]
+out-31 13:09:28.976 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+out-31 13:09:28.976 [Task submitter] INFO  nextflow.Session - [3d/6414a4] Submitted process > align2ref (2)
+out-31 13:09:33.167 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: align2ref (2); status: COMPLETED; exit: 0; error: -; workDir: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/work/3d/6414a4b7537979fe15f7b5d5e7a77a]
+out-31 13:09:33.186 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+out-31 13:09:33.186 [Task submitter] INFO  nextflow.Session - [ca/d85d03] Submitted process > align2ref (1)
+out-31 13:09:37.565 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: align2ref (1); status: COMPLETED; exit: 0; error: -; workDir: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/work/ca/d85d03b6c3ba6a13771232f5b67f43]
+out-31 13:09:37.583 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+out-31 13:09:37.592 [Task submitter] INFO  nextflow.Session - [67/74afac] Submitted process > runPicard (1)
+out-31 13:10:17.905 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: runPicard (1); status: COMPLETED; exit: 0; error: -; workDir: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/work/67/74afacc9c76e1a12415acbd4b18df9]
+out-31 13:10:17.917 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+out-31 13:10:17.918 [Task submitter] INFO  nextflow.Session - [71/6644d0] Submitted process > runIvar (1)
+out-31 13:10:22.005 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: runIvar (1); status: COMPLETED; exit: 0; error: -; workDir: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/work/71/6644d0accdc12019ff4e3595d0932a]
+out-31 13:10:22.013 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+out-31 13:10:22.014 [Task submitter] INFO  nextflow.Session - [50/ca4407] Submitted process > runSnpEff (1)
+out-31 13:10:29.498 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: runSnpEff (1); status: COMPLETED; exit: 0; error: -; workDir: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/work/50/ca4407bed17b031ee503fe52106869]
+out-31 13:10:29.501 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+out-31 13:10:29.502 [Task submitter] INFO  nextflow.Session - [11/671504] Submitted process > runReadCounts (1)
+out-31 13:10:30.743 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: runReadCounts (1); status: COMPLETED; exit: 0; error: -; workDir: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/work/11/6715043bf1ed5fb732bc5dfe3da7b9]
+out-31 13:10:30.751 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+out-31 13:10:30.757 [Task submitter] INFO  nextflow.Session - [e4/36e691] Submitted process > runIvar (2)
+out-31 13:10:34.834 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: runIvar (2); status: COMPLETED; exit: 0; error: -; workDir: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/work/e4/36e691f961a4b4bf823c034994c26c]
+out-31 13:10:34.903 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+out-31 13:10:34.903 [Task submitter] INFO  nextflow.Session - [27/10e015] Submitted process > runSnpEff (2)
+out-31 13:10:41.253 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 14; name: runSnpEff (2); status: COMPLETED; exit: 0; error: -; workDir: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/work/27/10e015592db4806952b85dd3cbf086]
+out-31 13:10:41.264 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+out-31 13:10:41.264 [Task submitter] INFO  nextflow.Session - [9f/338d15] Submitted process > runReadCounts (2)
+out-31 13:10:42.338 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 15; name: runReadCounts (2); status: COMPLETED; exit: 0; error: -; workDir: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/work/9f/338d1521b6f87c81c9176f8752284d]
+out-31 13:10:42.350 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+out-31 13:10:42.351 [Task submitter] INFO  nextflow.Session - [55/5b53ad] Submitted process > runPicard (2)
+out-31 13:11:23.693 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 16; name: runPicard (2); status: COMPLETED; exit: 0; error: -; workDir: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/work/55/5b53adffaebace1d8bdb30edf2b5e0]
+out-31 13:11:23.711 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+out-31 13:11:23.712 [Task submitter] INFO  nextflow.Session - [90/5c0389] Submitted process > fixWGS (1)
+out-31 13:11:26.052 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 18; name: fixWGS (1); status: COMPLETED; exit: 0; error: -; workDir: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/work/90/5c0389400ca4420f269592eabcb094]
+out-31 13:11:26.056 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+out-31 13:11:26.057 [Task submitter] INFO  nextflow.Session - [69/5d1396] Submitted process > alignConsensus2Ref (1)
+out-31 13:11:26.856 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 17; name: alignConsensus2Ref (1); status: COMPLETED; exit: 0; error: -; workDir: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/work/69/5d1396234584ebb405da6d9a02d9d5]
+out-31 13:11:26.877 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+out-31 13:11:26.878 [Task submitter] INFO  nextflow.Session - [40/a756f8] Submitted process > alignConsensus2Ref (2)
+out-31 13:11:27.731 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 19; name: alignConsensus2Ref (2); status: COMPLETED; exit: 0; error: -; workDir: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/work/40/a756f8ae796cac34b9bd44dc453b20]
+out-31 13:11:27.756 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+out-31 13:11:27.756 [Task submitter] INFO  nextflow.Session - [72/f13fb7] Submitted process > runVfReport
+out-31 13:11:28.641 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 20; name: runVfReport; status: COMPLETED; exit: 0; error: -; workDir: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/work/72/f13fb73432d4c0919d719bec6c1775]
+out-31 13:11:28.652 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+out-31 13:11:28.652 [Task submitter] INFO  nextflow.Session - [b3/a798e9] Submitted process > fixWGS (2)
+out-31 13:11:29.763 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 21; name: fixWGS (2); status: COMPLETED; exit: 0; error: -; workDir: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/work/b3/a798e97e5fac5e82f3fd427ed955bf]
+out-31 13:11:29.772 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+out-31 13:11:29.772 [Task submitter] INFO  nextflow.Session - [e4/8c7990] Submitted process > runIntraHostScript (1)
+out-31 13:11:33.332 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 22; name: runIntraHostScript (1); status: COMPLETED; exit: 0; error: -; workDir: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/work/e4/8c799087ae5222c0ae9dda0b49d1ad]
+out-31 13:11:33.336 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+out-31 13:11:33.336 [Task submitter] INFO  nextflow.Session - [51/5fe3a3] Submitted process > runIntraHostScript (2)
+out-31 13:11:36.803 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 23; name: runIntraHostScript (2); status: COMPLETED; exit: 0; error: -; workDir: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/work/51/5fe3a322a680f13afa50e393b5ad4d]
+out-31 13:11:36.851 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+out-31 13:11:36.851 [Task submitter] INFO  nextflow.Session - [52/67a4e9] Submitted process > compileOutputs
+out-31 13:11:38.068 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 24; name: compileOutputs; status: COMPLETED; exit: 0; error: -; workDir: /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal/chikv/work/52/67a4e97bb7f87ba3a4069436c216b5]
+out-31 13:11:38.071 [main] DEBUG nextflow.Session - Session await > all process finished
+out-31 13:11:38.167 [main] DEBUG nextflow.Session - Session await > all barriers passed
+out-31 13:11:38.194 [main] INFO  nextflow.Nextflow - 
+===========================================
+[1;32mFinished in 2m 25s
+
+out-31 13:11:38.224 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=24; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=2m 19s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+out-31 13:11:38.290 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+out-31 13:11:38.324 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

@@ -1,0 +1,17 @@
+virus custom
+adaptersFile /home/alexandre/Documentos/tool/ViralFlow/mayaro/mayv_primers.fasta
+outDir /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal 
+inDir /home/alexandre/Downloads/viralflow_nf/ViralFlow/teste_final/fastq/normal
+runSnpEff true
+writeMappedReads false
+minLen 75
+depth 5
+minDpIntrahost 100
+trimLen 0
+refGenomeCode NC_003417.1
+referenceGFF null
+referenceGenome null 
+nextflowSimCalls 1
+fastp_threads 1
+bwa_threads 1
+mafft_threads 1

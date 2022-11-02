@@ -1,0 +1,19 @@
+##sequence-region MH513597.1 1 11147
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=59301
+MH513597.1	Genbank	region	1	11147	.	+	.	ID=MH513597.1:1..11147;Dbxref=taxon:59301;collection-date=16-Mar-2015;country=Brazil: Sinop%2C MT;gbkey=Src;genome=genomic;genotype=L;identified-by=Carla Vieira;isolate=BR/Sinop/H307/2015;isolation-source=serum;lab-host=Vero E6 cells;lat-lon=11.863 S 55.483 W;mol_type=genomic RNA;nat-host=Homo sapiens
+MH513597.1	Genbank	five_prime_UTR	1	74	.	+	.	ID=id-MH513597.1:1..74;gbkey=5'UTR
+MH513597.1	Genbank	CDS	75	7388	.	+	0	ID=cds-AXF50012.1;Dbxref=NCBI_GP:AXF50012.1;Name=AXF50012.1;gbkey=CDS;product=nonstructural polyprotein;protein_id=AXF50012.1;transl_except=(pos:5532..5534%2Caa:Other)
+MH513597.1	Genbank	mature_protein_region_of_CDS	75	1670	.	+	.	ID=id-AXF50012.1:1..532;Note=nsp1;Parent=cds-AXF50012.1;gbkey=Prot;product=nonstructural protein 1
+MH513597.1	Genbank	mature_protein_region_of_CDS	1671	4076	.	+	.	ID=id-AXF50012.1:533..1334;Note=nsp2;Parent=cds-AXF50012.1;gbkey=Prot;product=nonstructural protein 2
+MH513597.1	Genbank	mature_protein_region_of_CDS	4077	5534	.	+	.	ID=id-AXF50012.1:1335..1820;Note=nsp3;Parent=cds-AXF50012.1;gbkey=Prot;product=nonstructural protein 3
+MH513597.1	Genbank	mature_protein_region_of_CDS	5535	7385	.	+	.	ID=id-AXF50012.1:1821..2437;Note=nsp4;Parent=cds-AXF50012.1;gbkey=Prot;product=nonstructural protein 4
+MH513597.1	Genbank	promoter	7366	7389	.	+	.	ID=id-MH513597.1:7366..7389;Note=subgenomic promoter;gbkey=regulatory;regulatory_class=promoter
+MH513597.1	Genbank	sequence_feature	7387	7412	.	+	.	ID=id-MH513597.1:7387..7412;Note=internal ribosome entry site%3B IRES;gbkey=misc_feature
+MH513597.1	Genbank	CDS	7415	11143	.	+	0	ID=cds-AXF50013.1;Dbxref=NCBI_GP:AXF50013.1;Name=AXF50013.1;gbkey=CDS;product=structural polyprotein;protein_id=AXF50013.1
+MH513597.1	Genbank	mature_protein_region_of_CDS	7415	8188	.	+	.	ID=id-AXF50013.1:1..258;Note=c;Parent=cds-AXF50013.1;gbkey=Prot;product=capsid
+MH513597.1	Genbank	mature_protein_region_of_CDS	8189	8386	.	+	.	ID=id-AXF50013.1:259..324;Parent=cds-AXF50013.1;gbkey=Prot;product=e3 protein
+MH513597.1	Genbank	mature_protein_region_of_CDS	8387	9652	.	+	.	ID=id-AXF50013.1:325..746;Parent=cds-AXF50013.1;gbkey=Prot;product=e2 envelope glycoprotein
+MH513597.1	Genbank	mature_protein_region_of_CDS	9653	9832	.	+	.	ID=id-AXF50013.1:747..806;Parent=cds-AXF50013.1;gbkey=Prot;product=6k peptide
+MH513597.1	Genbank	mature_protein_region_of_CDS	9833	11140	.	+	.	ID=id-AXF50013.1:807..1242;Parent=cds-AXF50013.1;gbkey=Prot;product=e1 envelope glycoprotein
+MH513597.1	Genbank	three_prime_UTR	11142	11147	.	+	.	ID=id-MH513597.1:11142..11147;gbkey=3'UTR
+
